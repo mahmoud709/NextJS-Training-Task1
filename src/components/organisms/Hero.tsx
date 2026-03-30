@@ -1,6 +1,6 @@
 export default function Hero() {
    return (
-      <section className="pt-24 min-h-screen bg-gray-50 flex justify-center items-center">
+      <section className="pt-24 min-h-screen bg-gray-50 flex flex-col justify-center items-center">
          <div className="max-w-7xl h-full mx-auto px-4 text-center">
 
             {/* Title */}
@@ -32,6 +32,11 @@ export default function Hero() {
                </a>
             </div>
 
+         </div>
+         <div className="mt-10 flex justify-center gap-8 text-sm text-gray-600">
+            <div><span className="font-bold text-black">2+</span> Students</div>
+            <div><span className="font-bold text-black">20+</span> Courses</div>
+            <div><span className="font-bold text-black">30+</span> Instructors</div>
          </div>
       </section>
    );
