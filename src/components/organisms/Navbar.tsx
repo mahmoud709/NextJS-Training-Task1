@@ -16,7 +16,7 @@ export default function Navbar() {
    ];
 
    return (
-      <nav className="fixed top-0 w-full z-50 bg-white border-b">
+      <nav className="fixed top-0 w-full z-50 bg-white shadow-sm">
          <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
 
             {/* Logo */}
@@ -66,7 +66,7 @@ export default function Navbar() {
          </div>
 
          {/* Mobile Menu */}
-         <div className={`${open ? "block" : "hidden"} md:hidden border-t`}>
+         <div className={`${open ? "block" : "hidden"} md:hidden`}>
             <div className="flex flex-col p-4 gap-4">
                {links.map((link) => (
                   <Link
